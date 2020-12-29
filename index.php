@@ -35,6 +35,13 @@ Released   : 20130631
 			<div id="banner"> <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> </div>
 		</div>
 	</div>
+	<?php
+		include('get-parameters.php');
+		if($show_debug == 'True')
+		{
+			echo "<H1>Host: " . $_SERVER["HTTP_HOST"] . "</H1>";
+		}
+	?>
 	<div id="menu-wrapper">
 		<div id="menu" class="container">
 			<ul>
