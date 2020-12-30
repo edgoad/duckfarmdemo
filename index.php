@@ -1,4 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php
+?><!DOCTYPE html>
 <!--
 Design by TEMPLATED
 http://templated.co
@@ -35,6 +36,12 @@ Released   : 20130631
 			<div id="banner"> <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> </div>
 		</div>
 	</div>
+	<div 
+		<?php  
+			include('get-parameters.php'); 
+			if ($show_beta_features == '')
+				echo 'display:None;';
+		?>"></div>
 	<?php
 		include('get-parameters.php');
 		if($show_debug == 'True')
