@@ -36,19 +36,14 @@ Released   : 20130631
 			<div id="banner"> <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> </div>
 		</div>
 	</div>
-	<div 
-		<?php  
-			include('get-parameters.php'); 
-			if ($show_beta_features == '')
-				echo 'display:None;';
-		?>"></div>
 	<?php
-		include('get-parameters.php');
-		if($show_debug == 'True')
-		{
-			echo "<H1>Host: " . $_SERVER["HTTP_HOST"] . "</H1>";
-		}
-	?>
+                // Get the application environment parameters from the Parameter Store.
+				//include ('getAppParameters.php');
+				$showServerInfo = true
+
+                // Display the server metadata information if the showServerInfo parameter is true.
+                include('serverInfo.php');
+        ?>
 	<div id="menu-wrapper">
 		<div id="menu" class="container">
 			<ul>
