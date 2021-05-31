@@ -39,7 +39,7 @@ Released   : 20130631
 	<?php
                 // Get the application environment parameters from the Parameter Store.
 				//include ('getAppParameters.php');
-				$showServerInfo = true
+				$showServerInfo = true;
 
                 // Display the server metadata information if the showServerInfo parameter is true.
                 include('serverInfo.php');
